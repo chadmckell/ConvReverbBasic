@@ -6,7 +6,7 @@
 %
 % Description: This script convolves an input audio signal with a simulated 
 % impulse response from a three-dimensional room with equal wall dimensions. 
-% The convolution is performed using a vector-based implementation. 
+% The convolution is performed using a vector-based implementation.
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
 tic; close; clc; clear;
 
