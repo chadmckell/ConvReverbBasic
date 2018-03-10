@@ -29,7 +29,7 @@ Lx = length(x);
 % Read in .wav file of simulated impulse response 
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
 
-[h,Fh] = audioread('IR_10x10x10_s1669455_McKell.wav'); 
+[h,Fh] = audioread('IR_10x10x10.wav');
 
 % If user inserts stereo audio, only read the left channel 
 if size(x,2) > 1
@@ -80,8 +80,8 @@ soundsc(y,Fx);
 % Save simulation as .wav file
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
 
-% Define filename. Include parameter values in filename.
-filename = 'ConvReverb_s1669455_McKell.wav';
+% Define filename. 
+filename = 'ConvReverbBasic.wav';
 
 % Write .wav file to MATLAB pwd at 16 bits
 audiowrite(filename, y, Fx, 'BitsPerSample', 16);
